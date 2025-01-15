@@ -1,66 +1,66 @@
+# My PHP Web Development Project
+This repository contains my web development project for the third year of college. In the first semester, we were tasked with using PHP and a database of our choice to create an interactive website that allows users to register and retrieve information for specific tasks.
+
+For this project, I developed a To-Do list application that enables users to create different pages with specific details. During the project presentation, I was asked to implement a feature that converts text to HTML and vice versa. However, due to time constraints, I was only able to complete part of the task.
+
+## Technologies Used
+
+<p align="center"><a href="https://www.php.net" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png" width="150" alt="PHP Logo"></a></p> 
+
+<p align="center">PHP is a widely-used, open-source scripting language primarily designed for web development. It is an essential tool for building dynamic websites and web applications. In this project, PHP was used to handle user input, interact with the database, and display dynamic content. </p>
+
+<p align="center"><a href="https://www.mysql.com" target="_blank"><img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" width="150" alt="MySQL Logo"></a></p>
+
+<p align="center">MySQL is an open-source relational database management system (RDBMS). It is known for its speed and reliability, making it one of the most popular choices for web applications. In this project, MySQL was used to store and manage user data, including tasks, pages, and details for the To-Do list application. </p>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<p align="center">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects.</p>
 
-## About Laravel
+## Features
+>User Authentication:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Login and registration functionality built with Laravel authentication.
+Errors are displayed for invalid credentials.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+>Main Page:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Displays a personalized welcome message for logged-in users.
+Users can create new pages dynamically.
+Lists all user-specific pages with navigation options.
+Includes a logout feature.
 
-## Learning Laravel
+>Page Management:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Users can create, view, and update multiple pages.
+Pages have editable titles and content.
+Inline rich-text editor for formatting (e.g., bold, italic, underline).
+Markdown and HTML conversion using turndown.js and markdown-it.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+>Persistence:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Page data is stored in a MySQL database.
+Changes to page titles and content are submitted and saved via a form.
 
-## Laravel Sponsors
+>Frontend Logic:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+JavaScript is used for localStorage-based active page tracking and updating the browser's URL dynamically.
+Page transitions and rich-text editing functionalities enhance the user experience.
 
-### Premium Partners
+## Set Up the database
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Visit the official MySQL download page and install MySQL Community Server and MySQL Workbench: https://dev.mysql.com/downloads/
 
-## Contributing
+Launch MySQL Workbench, create a new connection profile by specifying the host, port, username, and password and connect to the server
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+You will need the to create a .env file in the root folder with you own information which should look this:
+```
+ENGINE=django.db.backends.mysql
+NAME='your_database'
+USER='your_username'
+PASSWORD='your_password',
+HOST=localhost
+PORT=3306
+```
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# This should be all, just run the php artisan serve command in the terminal and you should be good to go!
