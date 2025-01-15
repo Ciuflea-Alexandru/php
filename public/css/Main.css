@@ -1,0 +1,169 @@
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+}
+
+.container1 {
+  color: white;
+  background-color: #ecbb50;
+  border-radius: 0px 40px 0px 0px;
+  height: 100vh;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.welcome-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.page-title {
+  position: relative;
+  color: black;
+  font-size: 40px;
+}
+
+.create-button-container {
+  display: flex;
+}
+
+.create-page-button {
+  background-color: white;
+  height: 50px;
+  width: 260px;
+  font-size: 30px;
+  border-radius: 40px 40px 0px 0px;
+  border: none;
+  border-right: 1px solid #ecbb50;
+  cursor: pointer;
+}
+
+.page-container {
+  width: 90%;
+  height: 80%;
+  border: 1px solid white;
+  margin-top: 10px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.page-button {
+  background-color: white;
+  height: 50px;
+  width: 80%;
+  border: none;
+  border-radius: 40px 40px 40px 40px;
+  cursor: pointer;
+  margin-top: 11px;
+  font-size: 20px;
+}
+
+.book-button.selected {
+  border-left: 10px solid black;
+}
+
+.logout-button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+
+.logout-button {
+  background-color: white;
+  height: 80px;
+  width: 270px;
+  border-radius: 0px 0px 40px 40px;
+  border: 5px solid #ecbb50;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.link {
+  color: black;
+  font-size: 30px;
+  ;
+}
+
+.container2 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  min-height: 100%;
+  height: auto;
+}
+
+.container2-form {
+  width: 100%;
+  height: 100%;
+}
+
+.page-input-container {
+  width: 100%;
+  height: 71%;
+}
+
+.title {
+  width: 400px;
+  height: 100px;
+  border: none;
+  border-bottom: 3px solid #ecbb50;
+  resize: none;
+  font-size: 40px;
+  margin: 20px 0px;
+  font-family: Arial, sans-serif;
+}
+
+.text {
+  width: 90%;
+  height: 100%;
+  border: none;
+  resize: none;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.save-button-container {
+  background-color: #ecbb50;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 200px 0px 0px;
+  width: 200px;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.save-button, .markdown-button, .turndown-button, .bold-button, .italic-button, .underline-button, .size-select {
+  background-color: white;
+  height: 80px;
+  width: 200px;
+  border-radius: 40px 40px 40px 40px;
+  border: 5px solid #ecbb50;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#editor h1,
+#editor h2,
+#editor h3,
+#editor h4,
+#editor h5,
+#editor h6 {
+  font-family: inherit;
+  font-weight: bold;
+}
+
